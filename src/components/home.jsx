@@ -6,12 +6,12 @@ const Header = () => {
    
     return (
 
-        <div className="header" data-aos="fade-up">
+        <div className="header" data-aos="fade-up" id="home">
             <div className="header-text">
                 <p>Hi there! 👋</p>
                 <p className="name">I'm <span>Adebiyi Abisola Oreoluwa</span></p>
                 <p className="job">A FRONTEND WEB DEVELOPER</p>
-                <button className="btn">HIRE ME</button>
+                <a href="#contact" rel="noreferrer" className="btn">HIRE ME</a>
             </div>
 
             <div className="image-container">
