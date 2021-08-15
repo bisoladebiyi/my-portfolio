@@ -1,38 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body{
+  color: #fff;
+  background: #171717;
+  font-family: Roboto;
+  position: relative;
+  overflow: hidden;
+
+}
 .App {
-  text-align: center;
+  height: 100vh;
+  overflow: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  width: 100%;
+  background: #171717;
+  position: fixed;
+  z-index: 3000;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+padding: 20px 40px 15px;
+  align-items: center;
+  font-size: 14px;
+}
+.navbar.active {
+  background: #6DECB9;
+
+}
+.logo {
+  font-family: Lobster;
+  font-size: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-items {
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+.nav-items li:not(:last-child) {
+  position: relative;
+  margin-right: 30px; 
+}
+.nav-items li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: #6DECB9;
+  transition: width ease-in-out .2s;
+}
+.nav-items li:not(:last-child):hover::after{
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
+
+.btn-contact {
+  padding: 15px 40px;
+  background: #6DECB9;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.header {
   min-height: 100vh;
+ width: 70%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+} 
+.header-text {
+  width: 60%;
+}
+.header-text p:first-child {
+  font-size: 20px;
+}
+.name {
+  font-size: 54px;
+  font-weight: 700;
+}
+.job {
+  font-size: 22px;
+  margin-top: 10px;
+}
+span{
+  color: #6DECB9;
+}
+.image {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid #171717 ;
+  
+}
+.image-container {
+  position: relative;
+
+}
+.circle {
+  position: absolute;
+  bottom: 8px;
+  right: -10px;
+  width: 315px;
+  height: 315px;
+  border-radius: 50%;
+  background: #6DECB9;
+  z-index: -1;
+
+}
+
+.btn {
+  padding: 10px;
+  width: 30%;
+  background: none;
+  color: #fff;
+  border: 1px solid #6DECB9;
+  border-radius: 2px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.element-1, .element-2{
+  position: absolute;
+}
+.element-1{
+right: -9px;
+bottom: -70px;
+}
+.element-2 {
+  top: 180px;
+  left: -20px;
+}
+.icons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+.icon {
+  width: 23px;
+  color: #fff;
+}
+.icon:not(:last-child) {
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.about {
+  width: 70%;
+  min-height: 100vh;
+  margin: 0px auto;
 }
+.skill {
+  margin-top: 30px;
+}
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  border-radius: 13px;
+  border: 1px solid #6DECB9;
+  overflow: hidden;
+  
+}
+.progress {
+  height: 30px;
+  background: #6DECB9;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
