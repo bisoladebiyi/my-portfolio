@@ -17,7 +17,7 @@ const works = [
     {
         id: 2,
         img: grocery,
-        desc: "A react web app used for adding items i.e grocery to  grocery/shopping list. Items could be added and removed at any time",
+        desc: "A react web app used for adding/removing items i.e grocery, to/from a  grocery list.",
         addclass: "work switch",
         title: "Grocery Bud App",
         github: "https://github.com/bisoladebiyi/react-mini-projects/tree/main/grocery-bud",
