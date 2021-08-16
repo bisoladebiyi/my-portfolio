@@ -12,7 +12,7 @@ import Loading from "./components/loading";
 import SideNav from "./components/side-nav";
 
 function App() {
-  const [isLoading, setIsLoading]=useState(false)
+  const [isLoading, setIsLoading]=useState(true)
   useEffect(()=> {
     setTimeout(()=> {
       setIsLoading(false)
