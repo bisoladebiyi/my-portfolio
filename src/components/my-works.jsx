@@ -36,6 +36,10 @@ const MyWorks = () => {
                 )
 
             })}
+            <div className="viewmore">
+            <a href="#" >View More...</a>
+            </div>
+            
         </div>
     )
 }

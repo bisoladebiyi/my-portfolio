@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './App.css';
 import Navbar from './components/navbar';
 import element from './images/element (2).svg'
@@ -8,12 +8,22 @@ import Aos from 'aos'
 import "aos/dist/aos.css";
 import MyWorks from "./components/my-works";
 import Contact from "./components/contact";
+import Loading from "./components/loading";
 
 function App() {
+  const [isLoading, setIsLoading]=useState(true)
   useEffect(()=> {
+    setTimeout(()=> {
+      setIsLoading(false)
+    }, 2000)
     Aos.init({ duration: 1000 })
 
   },[])
+
+
+  if(isLoading) {
+    return <Loading />
+  }
 
   return (
        <div className="App">
