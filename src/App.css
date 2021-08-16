@@ -450,26 +450,29 @@ text-align: left;
   box-shadow: 0 5px 15px #2e2e2e;
 }
 .side-nav-items {
-  margin-top: 100px;
-  padding: 0 0px 0 30px;
+  margin-top: 70px;
+  padding: 30px 0 0 0;
  
   
 }
-.side-nav-items li{
+.side-nav-items a{
   color: #171717;
+  display: block;
   margin-bottom: 50px;
   text-transform: uppercase;
+  text-align: center;
+  transition: right ease-in-out .5s;
   
 }
 .close {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 35px;
+  height: 35px;
   background: none;
   border: none;
   outline: none;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
 }
 
 
