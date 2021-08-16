@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -379,12 +380,16 @@ text-align: left;
 }
 .viewmore {
   text-align: center;
-  margin: -100px 0 100px;
+  margin: -100px 0 200px;
 }
 .viewmore a {
   color: #6DECB9;
   font-size: 13px;
+  transition: color ease-in-out .3s;
   
+}
+.viewmore a:hover {
+  color: #171717;
 }
 
 
@@ -419,7 +424,7 @@ text-align: left;
   text-align: center;
   font-size: 13px;
   color: #6DECB9;
-  font-family: monospace;
+  font-family: Cutive Mono, monospace;
   
 }
 
@@ -440,18 +445,21 @@ text-align: left;
   position: fixed;
   top: 0;
   right: -1000px;
-  transition: right ease .3s;
+  transition: right ease-in-out .5s;
   font-size: 13px;
-  
+  box-shadow: 0 5px 15px #2e2e2e;
 }
 .side-nav-items {
   margin-top: 100px;
+  padding: 0 0px 0 30px;
+ 
+  
 }
 .side-nav-items li{
   color: #171717;
   margin-bottom: 50px;
   text-transform: uppercase;
-  padding: 0 0px 0 30px;
+  
 }
 .close {
   position: absolute;
@@ -1051,18 +1059,18 @@ text-align: left;
   border-radius: 50%;
   background: #6DECB9;
   opacity: .3;
-  transition: opacity ease .3s;
+  transition: opacity ease .2s;
   animation-name: animate;
-  animation-duration: 1s;
+  animation-duration: .6s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 .circle-2 {
-  animation-delay: .4s;
+  animation-delay: .1s;
 }
 .circle-3 {
-  animation-delay: .8s;
+  animation-delay: .2s;
 }
 
 

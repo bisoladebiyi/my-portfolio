@@ -37,7 +37,7 @@ const MyWorks = () => {
 
             })}
             <div className="viewmore">
-            <a href="#" >View More...</a>
+            <a href="#" className="btn" >View More...</a>
             </div>
             
         </div>
