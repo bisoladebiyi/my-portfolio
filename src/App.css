@@ -10,6 +10,7 @@ body{
   font-family: Roboto;
   position: relative;
   scroll-behavior: smooth;
+ 
 }
 
 /* navbar */
@@ -18,7 +19,7 @@ body{
   background: #171717;
   position: fixed;
   top: 0;
-  z-index: 3000;
+  z-index: 200;
 }
 .nav {
   display: flex;
@@ -431,7 +432,37 @@ text-align: left;
 }
 
 
-
+.side-nav{
+  width: 50%;
+  height: 100vh;
+  background: #6DECB9;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  transition: right ease .3s;
+  font-size: 13px;
+  
+}
+.side-nav-items {
+  margin-top: 100px;
+}
+.side-nav-items li{
+  color: #171717;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  padding: 0 0px 0 30px;
+}
+.close {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: none;
+  border: none;
+  outline: none;
+  top: 0;
+  right: 0;
+}
 
 
 /* Responsiveness */
