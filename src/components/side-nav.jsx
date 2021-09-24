@@ -5,7 +5,6 @@ const SideNav = () => {
     
     const showMenu = () => {
         let menu = document.querySelector(".side-nav")
-        let links = document.querySelectorAll(".links")
         
         if (menu.style.right !== "0px") {
           menu.setAttribute("style", "right: 0;");
@@ -22,7 +21,7 @@ const SideNav = () => {
     return (
         <div className="side-nav">
             <ul className="side-nav-items">
-                <button className="close" onClick={showMenu}><img src={close} /></button>
+                <button className="close" onClick={showMenu}><img src={close} alt="" /></button>
                     <a className="links" href="#home" onClick={closeOnClick}><li>Home</li></a>
                     <a className="links" href="#about" onClick={closeOnClick}><li>About Me</li></a>
                     <a className="links" href="#works" onClick={closeOnClick}><li>My Works</li></a> 

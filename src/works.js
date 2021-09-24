@@ -1,6 +1,8 @@
 import loopstudio from './images/loopstudio.png'
 import grocery from './images/grocery.png'
 import trafalgar from './images/trafalgar.png'
+import resume from './images/resume.png'
+
 
 
 const works = [
@@ -33,6 +35,14 @@ const works = [
         github: "https://github.com/bisoladebiyi/Trafalgar-landing-page",
         site: "https://trafalgar-bee.netlify.app/"
 
+    }, {
+        id:4,
+        img: resume,
+        desc: "A single webpage resume. Fully responsive and built with React.js.",
+        addclass: "work switch",
+        title: "My Resume",
+        github: "https://github.com/bisoladebiyi/HNGi8-tasks-stage-2/tree/main/resume-hng-task",
+        site: "https://bisoladebiyi-resume.vercel.app/"
     }
 
 ]

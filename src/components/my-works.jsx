@@ -34,7 +34,6 @@ const MyWorks = () => {
                         </div>
                     </div>
                 )
-
             })}
             <div className="viewmore">
             <a href="#" className="btn" >View More...</a>
