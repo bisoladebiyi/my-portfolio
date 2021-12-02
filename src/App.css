@@ -78,18 +78,18 @@ a {
 
 .btn-contact {
   padding: 15px 40px;
-  background: #6DECB9;
+  
   border: 1px solid #6DECB9;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
   transition: background ease-in-out .3s;
-  color: #141414;
+  color: #6DECB9;
 }
 .btn-contact:hover {
-  background: transparent;
+  background: #6DECB9;
   border: 1px solid #6DECB9;
-  color: #fff;
+  color: #000;
 }
 
 
@@ -391,7 +391,7 @@ text-align: left;
 .viewmore a {
   color: #6DECB9;
   font-size: 13px;
-  transition: color ease-in-out .3s;
+  transition: all ease-in-out .3s;
   
 }
 .viewmore a:hover {
@@ -446,14 +446,15 @@ text-align: left;
 .side-nav{
   width: 50%;
   height: 100vh;
-  background: #6DECB9;
+  background: rgb(28, 27, 27);
   z-index: 999;
   position: fixed;
   top: 0;
   right: -1000px;
   transition: right ease-in-out .5s;
   font-size: 13px;
-  box-shadow: 0 5px 15px #2e2e2e;
+  box-shadow: 0 5px 15px #111111;
+ 
 }
 .side-nav-items {
   margin-top: 70px;
@@ -468,6 +469,7 @@ text-align: left;
   text-transform: uppercase;
   text-align: center;
   transition: right ease-in-out .5s;
+  color: #fff;
   
 }
 .close {
@@ -479,6 +481,7 @@ text-align: left;
   outline: none;
   top: 20px;
   right: 20px;
+
 }
 
 
