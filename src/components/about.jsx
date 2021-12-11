@@ -28,6 +28,10 @@ const About = () => {
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Javascript</p>
                             </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Typescript</p>
+                            </div>
                         </div>
                         <div>
                             <div className="tech">
@@ -42,6 +46,11 @@ const About = () => {
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>React.js</p>
                             </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Redux</p>
+                            </div>
+                            
                         </div>
                     </div>
 
