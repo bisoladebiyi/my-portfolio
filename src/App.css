@@ -11,12 +11,12 @@ body{
   font-family: Roboto;
   position: relative;
   scroll-behavior: smooth;
+  height: 100%;
 }
 button,
 a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
 
 
 
@@ -431,11 +431,12 @@ text-align: left;
   color: #171717;
 }
 .footer-text {
-  margin: 170px 0 100px;
+  margin: 170px 0 0px;
   text-align: center;
   font-size: 13px;
   color: #8de4ee;
   font-family: Cutive Mono, monospace;
+  padding-bottom: 40px;
   
 }
 
@@ -473,7 +474,7 @@ text-align: left;
   position: absolute;
   bottom: 0;
   color: #000;
-  background: linear-gradient(0deg, #8de4ee 0%, rgba(24, 24, 19, 0) 104.29%);
+  background: linear-gradient(0deg, #8de4ee 0%, #ffffff00 104.29%);
 }
 .work-title {
   font-size: 20px;
@@ -860,6 +861,7 @@ text-align: left;
   
   .footer-text{
     font-size: 10px;
+   
   }
 
 }
@@ -874,6 +876,9 @@ text-align: left;
   }
   h1{
     font-size: 20px;
+  }
+  .contact {
+    margin-top: 160px;
   }
 }
 @media (max-width: 499px) and (min-width: 340px) {
@@ -1156,7 +1161,7 @@ text-align: left;
 
 
 .loading{
-  height: 100vh;
+  height: 100%;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -1170,7 +1175,7 @@ text-align: left;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #6DECB9;
+  background: #8de4ee;
   opacity: .3;
   transition: opacity ease .2s;
   animation-name: animate;
