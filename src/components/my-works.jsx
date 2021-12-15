@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import works from '../works'
 
 
@@ -6,8 +7,8 @@ const MyWorks = () => {
     return (
         <div className="works" id="works">
             <h1>MY WORKS</h1>
-            
-            {works.map(({ img, id, desc, addclass, title, github, site})=> {
+            <div className="works-container">
+            {works.slice(0,4).map(({ img, id, desc, addclass, title, github, site})=> {
                 return (
                     <div className={addclass} key={id}>
                         <div className="work-img">
@@ -35,8 +36,10 @@ const MyWorks = () => {
                     </div>
                 )
             })}
+            </div>
+            
             <div className="viewmore">
-            <a href="#" className="btn" >View More...</a>
+            <Link to="/works" className="btn" >View More...</Link>
             </div>
             
         </div>

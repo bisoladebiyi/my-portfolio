@@ -27,6 +27,7 @@ a {
   position: fixed;
   top: 0;
   z-index: 200;
+ 
 }
 .nav {
   display: flex;
@@ -45,6 +46,7 @@ a {
 }
 
 .nav-items {
+  color: #000;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -79,16 +81,16 @@ a {
 .btn-contact {
   padding: 15px 40px;
   
-  border: 1px solid #6DECB9;
+  border: 1px solid #8de4ee;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 500;
   transition: background ease-in-out .3s;
-  color: #6DECB9;
+  color: #8de4ee;
 }
 .btn-contact:hover {
-  background: #6DECB9;
-  border: 1px solid #6DECB9;
+  background: #8de4ee;
+  border: 1px solid #8de4ee;
   color: #000;
 }
 
@@ -119,19 +121,19 @@ a {
 
 }
 span{
-  color: #6DECB9;
+  color: #8de4ee;
 }
 .btn {
   padding: 10px 40px;
   background: none;
   color: #fff;
-  border: 1px solid #6DECB9;
+  border: 1px solid #8de4ee;
   border-radius: 2px;
   cursor: pointer;
   transition: background ease-in-out .3s;
 }
 .btn:hover {
-  background: #6DECB9;
+  background: #8de4ee;
 }
 .image {
   width: 310px;
@@ -153,6 +155,7 @@ span{
   height: 96.5%;
   border-radius: 50%;
   background: #6DECB9;
+  opacity: .5;
   z-index: -1;
 }
 
@@ -216,7 +219,7 @@ a {
   width: 10%;
   margin-right: 20px;
   border-right: 2px solid #6DECB9;
-  opacity: .3;
+  opacity: .5;
 }
 .technologies {
   width: 50%;
@@ -239,6 +242,7 @@ a {
 .works {
   width: 70%;
   margin: 0 auto ;
+
 }
 .works h1 {
   margin-bottom: 70px;
@@ -246,6 +250,7 @@ a {
 .works h3 {
   color: #fff;
 }
+
 .work {
   display: grid;
   margin-bottom: 200px;
@@ -268,7 +273,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #6DECB9;
+  background: #8de4ee;
   top: 0;
   left: 0;
   border-radius: 10px;
@@ -347,7 +352,7 @@ text-align: left;
 }
 
 .desc {
-  background: #202020;
+  background: #1a1a1a;
   position: relative;
   width: 120%;
   top: 30%;
@@ -355,7 +360,7 @@ text-align: left;
   right: calc(20% + 40px);
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 5px 15px #141414;
+  box-shadow: 0 5px 15px #171717;
   
 } 
 .switch .desc {
@@ -389,7 +394,7 @@ text-align: left;
   margin: -100px 0 200px;
 }
 .viewmore a {
-  color: #6DECB9;
+  color: #8de4ee;
   font-size: 13px;
   transition: all ease-in-out .3s;
   
@@ -414,24 +419,94 @@ text-align: left;
   margin-bottom: 80px;
 }
 .get-in-touch {
-  color: #6DECB9;
+  color: #8de4ee;
   padding: 20px;
-  border: 1px solid #6DECB9;
+  border: 1px solid #8de4ee;
   border-radius: 2px;
   margin-top: 50px;
   transition: all ease-in-out .3s;
 }
 .get-in-touch:hover {
-  background: #6DECB9;
+  background: #8de4ee;
   color: #171717;
 }
 .footer-text {
-  margin: 200px 0 100px;
+  margin: 170px 0 100px;
   text-align: center;
   font-size: 13px;
-  color: #6DECB9;
+  color: #8de4ee;
   font-family: Cutive Mono, monospace;
   
+}
+
+.new-nav {padding: 30px 25px 0px;}
+.left{
+  width: 30px;
+  fill: #fff;
+}
+.work-page {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin: 50px auto 0;
+
+}
+.work-page-title{
+  width: 80%;
+  margin: 50px auto 0;
+}
+.work-container {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 4px;
+  position: relative;
+}
+.work-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-info{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  background: linear-gradient(0deg, #8de4ee 0%, rgba(24, 24, 19, 0) 104.29%);
+}
+.work-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+  color: #262626;
+
+}
+.techs {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin: 0 0 20px;
+  padding-left: 10px;
+}
+.technology{
+  font-size: 10px;
+  color: #fff;
+  background: #1c1d1c8a;
+  padding: 4px 6px;
+  border-radius: 15px;
+}
+.title-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+.icon-2{
+  width: 17px;
+  padding-right: 20px;
 }
 
 
@@ -599,6 +674,11 @@ text-align: left;
 }
 
 
+
+
+
+
+
 @media (max-width: 749px) and (min-width:0px){
 
   .nav-items a {
@@ -693,6 +773,14 @@ text-align: left;
     right: 0;
     transform: translateY(0);
   }
+  .work-title {
+    font-size: 17px;
+  
+  }
+  .icon-2{
+    width: 14px;
+  }
+  
   .viewmore {
     text-align: center;
     margin: -40px 0 100px;
@@ -774,6 +862,19 @@ text-align: left;
     font-size: 10px;
   }
 
+}
+@media (max-width: 600px) and (min-width: 0px) {
+  .work-page {
+    width: 80%;
+    display: block;
+  }
+  .work-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  h1{
+    font-size: 20px;
+  }
 }
 @media (max-width: 499px) and (min-width: 340px) {
   .nav{
