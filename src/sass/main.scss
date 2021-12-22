@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "./abstracts/mixins";
 * {
   padding: 0;
   margin: 0;
@@ -6,18 +7,22 @@
 }
 body {
   color: #fff;
-  background: linear-gradient(-45deg, #9aaa7d, #968686, #6c9399);
+  background: linear-gradient(-45deg, #9aaa7d, #968686, #509097);
   font-family: Nunito;
   position: relative;
   scroll-behavior: smooth;
-  background-size: 400% 400%;
+  background-size: 500% 1000%;
   height: 100%;
-  animation: change 20s ease-in-out infinite;
+  animation: change 70s ease-in-out infinite;
   overflow-x: hidden;
+  transition: background-color 0.1s ease;
 }
 button,
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+h1 {
+  @include fontSize;
 }
 
 /* navbar */
@@ -31,11 +36,17 @@ a {
     justify-content: space-between;
     padding: 30px 40px 10px;
     align-items: center;
+    @include respond(tab-land) {
+      padding: 20px 20px 10px;
+    }
   }
   .logo {
     font-family: Nunito;
     font-weight: 900;
     font-size: 20px;
+    @include respond(tab-land) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -47,14 +58,32 @@ a {
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+  @include respond(desktop) {
+    width: 85%;
+  }
   .header-text {
     padding-top: 50px;
+    @include respond(tab-land) {
+      padding-top: 25px;
+    }
     p {
       margin-bottom: 10px;
       font-size: 20px;
       font-weight: 500;
+      @include respond(desktop) {
+        font-size: 17px;
+      }
+      @include respond(tab-land) {
+        font-size: 15px;
+      }
       &:last-child {
         font-size: 16px;
+        @include respond(desktop) {
+          font-size: 15px;
+        }
+        @include respond(tab-land) {
+          font-size: 14px;
+        }
         a {
           color: rgb(218, 168, 168);
           cursor: pointer;
@@ -80,9 +109,27 @@ a {
     .job {
       margin: 5px 0 30px;
       font-size: 80px;
-      font-weight: 800;
-      color: #90dbdd;
+      font-weight: 600;
       line-height: 80px;
+      font-family: Poppins;
+      color: #dfedee;
+      @include respond(desktop) {
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 20px;
+      }
+      @include respond(tab-land) {
+        font-size: 50px;
+        line-height: 60px;
+      }
+      @include respond(tab-port) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @include respond(mobile) {
+        font-size: 35px;
+        line-height: 40px;
+      }
     }
   }
 }
@@ -92,35 +139,63 @@ a {
   position: fixed;
   top: 60%;
   right: 0;
+  @include respond(desktop) {
+    right: -1%;
+  }
+  @include respond(tab-port) {
+    top: 75%;
+  }
 
   ul {
+    .about-link {
+      right: 30%;
+    }
+    .works-link {
+      right: 40%;
+    }
+    .contact-link {
+      right: 50%;
+    }
     li {
       font-size: 13px;
       font-weight: 700;
       width: 100px;
       margin-bottom: 60px;
       position: relative;
-      right: 50%;
       transition: all 0.2s ease-in-out;
       cursor: pointer;
+      @include respond(tab-land) {
+        width: 70px;
+      }
+      @include respond(desktop) {
+        font-size: 12px;
+      }
+      @include respond(tab-land) {
+        font-size: 10px;
+      }
+      @include respond(tab-port) {
+        margin-bottom: 40px;
+      }
+
       &:hover {
         right: 70%;
         font-weight: 800;
       }
       &::after {
         content: "";
-        width: 100px;
+        width: 100%;
         height: 1px;
         background: rgb(201, 201, 201);
         position: absolute;
         top: 50%;
         right: -80px;
+        @include respond(tab-land) {
+          right: -50px;
+        }
       }
     }
   }
 }
-
-/* positioned elements */
 
 .icon {
   width: 20px;
@@ -128,7 +203,7 @@ a {
   transition: color ease-in-out 0.3s;
 }
 .icon:hover {
-  color: #6decb9;
+  color: #acebd2;
 }
 
 /* link-style */
@@ -147,14 +222,28 @@ a {
   color: #e9e9eb;
   height: 100%;
   width: 80%;
+  @include respond(tab-port) {
+    width: 88%;
+  }
   padding-top: 20px;
   h1 {
-    color: #fff;
     margin-bottom: 30px;
   }
   &-container {
     display: flex;
     width: 70%;
+    @include respond(desktop) {
+      width: 75%;
+      font-size: 14px;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      font-size: 13px;
+      line-height: 25px;
+    }
+    @include respond(mobile) {
+      font-size: 12px;
+    }
     .vertical-line {
       width: 10%;
       margin-right: 20px;
@@ -168,6 +257,12 @@ a {
       width: 50%;
       justify-content: space-between;
       display: flex;
+      @include respond(tab-port) {
+        width: 60%;
+      }
+      @include respond(mobile) {
+        width: 68%;
+      }
       .tech {
         display: flex;
         align-items: center;
@@ -182,13 +277,32 @@ a {
 .work-page {
   width: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
   margin: 50px auto 0;
   padding-bottom: 100px;
+  @include respond(desktop) {
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+  }
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+  }
+  @include respond(mobile) {
+    width: 85%;
+    margin-top: 40px;
+  }
+
   &-title {
     width: 80%;
     margin: 120px auto 0;
+    @include respond(tab-land) {
+      margin-top: 100px;
+    }
+    @include respond(mobile) {
+      margin-top: 90px;
+    }
   }
   &-container {
     width: 100%;
@@ -197,52 +311,64 @@ a {
     border-radius: 4px;
     position: relative;
     box-shadow: -2px 0px 8px 0px rgba(106, 104, 104, 0.75);
+    transition: box-shadow 0.2s ease-in-out;
+    &:hover {
+      box-shadow: -1px 0px 10px 0px rgba(58, 57, 57, 0.75);
+    }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-  }
-}
+    .work-info {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      color: #000;
+      background: linear-gradient(0deg, #12232474 0%, #b5e4e03c 114.29%);
+      &-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .title-icon {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          width: 100%;
+          padding-top: 20px;
+          .work-title {
+            font-size: 16px;
+            font-weight: 700;
+            padding-left: 10px;
+            color: #fff;
+          }
+          .icon-2 {
+            width: 17px;
+            padding-right: 20px;
+            color: #8de4ee;
+          }
+        }
 
-.work-info {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  color: #000;
-  background: linear-gradient(0deg, #8de4ee 0%, #ffffff00 104.29%);
-}
-.work-title {
-  font-size: 20px;
-  font-weight: 700;
-  padding-left: 10px;
-  color: #262626;
-}
-.techs {
-  display: flex;
-  justify-content: space-between;
-  width: 160px;
-  margin: 0 0 20px;
-  padding-left: 10px;
-}
-.technology {
-  font-size: 10px;
-  color: #fff;
-  background: #1c1d1c8a;
-  padding: 4px 6px;
-  border-radius: 15px;
-}
-.title-icon {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 100%;
-  padding-top: 20px;
-}
-.icon-2 {
-  width: 17px;
-  padding-right: 20px;
+        .techs {
+          display: flex;
+          justify-content: space-between;
+          width: 160px;
+          margin: 0 0 20px;
+          padding-left: 10px;
+        }
+        .technology {
+          font-size: 10px;
+          color: #fff;
+          background: #1c1d1c8a;
+          padding: 4px 6px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
 }
 
 /* contact me */
@@ -251,15 +377,24 @@ a {
   place-items: center;
   height: 100%;
   &-container {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
     text-align: center;
+    @include respond(tab-land) {
+      width: 60%;
+    }
+    @include respond(tab-port) {
+      width: 80%;
+    }
     h1 {
       margin-bottom: 20px;
     }
     .text {
       color: #e9e9eb;
       margin-bottom: 40px;
+      @include respond(desktop) {
+        font-size: 14px;
+      }
     }
     .btn {
       margin-top: 50px;
@@ -272,6 +407,10 @@ a {
         color: #fff;
         cursor: pointer;
         transition: background 0.2s ease-in-out;
+        @include respond(tab-port) {
+          font-size: 11px;
+          padding: 8px;
+        }
         &:hover {
           background: rgb(218, 168, 168);
         }
@@ -283,14 +422,28 @@ a {
       display: flex;
       width: 100%;
       justify-content: space-between;
+      @include respond(tab-port) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        place-items: center;
+      }
       .icon {
+        @include respond(tab-port) {
+          width: auto;
+          display: flex;
+          align-items: center;
+        }
         svg {
-          width: 16px;
+          width: 14px;
+          @include respond(tab-land) {
+            width: 12px;
+          }
+          @include respond(tab-port) {
+            margin-right: 8px;
+          }
         }
-        img {
-          color: #b2b1b9;
-        }
-        font-size: 13px;
+        font-size: 12px;
       }
     }
   }
@@ -305,45 +458,5 @@ a {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-.loading {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #171717;
-}
-.circle-container {
-  display: grid;
-  grid-template-columns: 30px 30px 30px;
-}
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #8de4ee;
-  opacity: 0.3;
-  transition: opacity ease 0.2s;
-  animation-name: animate;
-  animation-duration: 0.6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.circle-2 {
-  animation-delay: 0.1s;
-}
-.circle-3 {
-  animation-delay: 0.2s;
-}
-
-@keyframes animate {
-  from {
-    opacity: 0.3;
-  }
-  to {
-    opacity: 1;
   }
 }

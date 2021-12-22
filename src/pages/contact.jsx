@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import mail from "../images/mail.svg"
 
 const Contact = () => {
   return (
