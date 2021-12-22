@@ -1,19 +1,23 @@
 import React from 'react'
+import Navbar from '../components/navbar'
 import arrow from '../images/left-arrow.svg'
 
 const About = () => {
 
 
     return (
-        <div className="about" data-oas="fade-up" id="about">
-            <h1>ABOUT ME</h1>
+        <div className="container">
+             <Navbar/>
+            <div className="about" id="about"  data-aos="fade-right">
+           <div>
+           <h1>ABOUT ME</h1>
             <div className="about-container">
                 <div className="vertical-line">
                 </div>
                 <div>
-                    <p>I'm Adebiyi Abisola, a 19 year old frontend developer. I'm a first year at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
-                    <p>When i'm not coding, i enjoy reading...and eating 😅 </p>
-                    <p className="techs">Here are the few technologies i work with: </p>
+                    <p>I'm Adebiyi Abisola, a 19 year old frontend developer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
+                    <p>When i'm not coding, i enjoy reading...and eating</p>
+                    <p className="work-techs">Here are the few technologies i work with: </p>
                     <div className="technologies">
                         <div>
                             <div className="tech">
@@ -58,8 +62,12 @@ const About = () => {
 
             </div>
 
+           </div>
+
 
         </div>
+        </div>
+        
     )
 }
 

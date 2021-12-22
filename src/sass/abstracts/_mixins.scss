@@ -1,0 +1,33 @@
+// desktop - 1030
+// tab-land - 800
+// tab-port - 600
+// mobile - 400
+
+
+@mixin respond($breakpoint){
+    @if($breakpoint) == desktop {
+        @media (max-width: 1030px) { @content }
+    };
+    @if($breakpoint) == tab-land {
+        @media (max-width: 800px) { @content }
+    };
+    @if($breakpoint) == tab-port {
+        @media (max-width: 600px) { @content }
+    };
+    @if($breakpoint) == mobile {
+        @media (max-width: 400px) { @content }
+    };
+
+}
+@mixin fontSize {
+    font-size: 32px;
+    @include respond(desktop){
+        font-size: 28px;
+    }
+    @include respond(tab-land){
+        font-size: 26px;
+    }
+    @include respond(mobile){
+        font-size: 24px;
+    }
+}
