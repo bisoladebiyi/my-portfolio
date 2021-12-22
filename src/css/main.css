@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(-45deg, #9aaa7d, #968686, #6c9399);
+  font-family: Nunito;
+  position: relative;
+  scroll-behavior: smooth;
+  background-size: 400% 400%;
+  height: 100%;
+  animation: change 20s ease-in-out infinite;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+.navbar .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px 10px;
+  align-items: center;
+}
+.navbar .logo {
+  font-family: Nunito;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* header */
+.header {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-text {
+  padding-top: 50px;
+}
+.header .header-text p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header .header-text p:last-child {
+  font-size: 16px;
+}
+.header .header-text p:last-child a {
+  color: #daa8a8;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+}
+.header .header-text p:last-child a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 8px;
+  background: #daa8a8;
+  transition: width ease-in-out 0.2s;
+}
+.header .header-text p:last-child a:hover::after {
+  width: 100%;
+}
+.header .header-text .job {
+  margin: 5px 0 30px;
+  font-size: 80px;
+  font-weight: 800;
+  color: #90dbdd;
+  line-height: 80px;
+}
+
+.side-nav {
+  position: fixed;
+  top: 60%;
+  right: 0;
+}
+.side-nav ul li {
+  font-size: 13px;
+  font-weight: 700;
+  width: 100px;
+  margin-bottom: 60px;
+  position: relative;
+  right: 50%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.side-nav ul li:hover {
+  right: 70%;
+  font-weight: 800;
+}
+.side-nav ul li::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #c9c9c9;
+  position: absolute;
+  top: 50%;
+  right: -80px;
+}
+
+/* positioned elements */
+.icon {
+  width: 20px;
+  color: #b2b1b9;
+  transition: color ease-in-out 0.3s;
+}
+
+.icon:hover {
+  color: #6decb9;
+}
+
+/* link-style */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* about-section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto 200px;
+  line-height: 30px;
+  color: #e9e9eb;
+  height: 100%;
+  width: 80%;
+  padding-top: 20px;
+}
+.about h1 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.about-container {
+  display: flex;
+  width: 70%;
+}
+.about-container .vertical-line {
+  width: 10%;
+  margin-right: 20px;
+  border-right: 2px solid #6decb9;
+  opacity: 0.5;
+}
+.about-container .work-techs {
+  margin: 20px 0 10px;
+}
+.about-container .technologies {
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+}
+.about-container .technologies .tech {
+  display: flex;
+  align-items: center;
+}
+.about-container .technologies .tech .arrow {
+  width: 20px;
+}
+
+.work-page {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin: 50px auto 0;
+  padding-bottom: 100px;
+}
+.work-page-title {
+  width: 80%;
+  margin: 120px auto 0;
+}
+.work-page-container {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: -2px 0px 8px 0px rgba(106, 104, 104, 0.75);
+}
+.work-page-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-info {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  background: linear-gradient(0deg, #8de4ee 0%, #ffffff00 104.29%);
+}
+
+.work-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+  color: #262626;
+}
+
+.techs {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin: 0 0 20px;
+  padding-left: 10px;
+}
+
+.technology {
+  font-size: 10px;
+  color: #fff;
+  background: #1c1d1c8a;
+  padding: 4px 6px;
+  border-radius: 15px;
+}
+
+.title-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.icon-2 {
+  width: 17px;
+  padding-right: 20px;
+}
+
+/* contact me */
+.contact {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+.contact-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-container h1 {
+  margin-bottom: 20px;
+}
+.contact-container .text {
+  color: #e9e9eb;
+  margin-bottom: 40px;
+}
+.contact-container .btn {
+  margin-top: 50px;
+}
+.contact-container .btn a {
+  font-size: 13px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #daa8a8;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.contact-container .btn a:hover {
+  background: #daa8a8;
+}
+.contact-container .socials {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-container .socials .icon {
+  font-size: 13px;
+}
+.contact-container .socials .icon svg {
+  width: 16px;
+}
+.contact-container .socials .icon img {
+  color: #b2b1b9;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #171717;
+}
+
+.circle-container {
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8de4ee;
+  opacity: 0.3;
+  transition: opacity ease 0.2s;
+  animation-name: animate;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.circle-2 {
+  animation-delay: 0.1s;
+}
+
+.circle-3 {
+  animation-delay: 0.2s;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
