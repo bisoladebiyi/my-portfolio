@@ -26,7 +26,7 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
-                                <p>CSS</p>
+                                <p>CSS / SASS</p>
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
