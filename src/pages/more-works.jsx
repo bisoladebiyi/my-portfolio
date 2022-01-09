@@ -8,7 +8,7 @@ const MoreWorks = () => {
             <Navbar />
             <h1 className="work-page-title">MY WORKS</h1>
             <div className="work-page"  data-aos="fade-up">
-            {works.map(({img, id, desc, tech, title, github, site })=> {
+            {works.reverse().map(({img, id, desc, tech, title, github, site })=> {
                 return (
                    <a href={site} target="_blank" rel="noreferrer" > <div key={id} className="work-page-container">
                         <img src={img} alt="" />

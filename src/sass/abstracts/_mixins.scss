@@ -2,6 +2,7 @@
 // tab-land - 800
 // tab-port - 600
 // mobile - 400
+//tiny - 350
 
 
 @mixin respond($breakpoint){
@@ -16,6 +17,9 @@
     };
     @if($breakpoint) == mobile {
         @media (max-width: 400px) { @content }
+    };
+    @if($breakpoint) == tiny {
+        @media (max-width: 350px) { @content }
     };
 
 }

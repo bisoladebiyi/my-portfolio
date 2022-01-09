@@ -261,7 +261,7 @@ a {
         width: 60%;
       }
       @include respond(mobile) {
-        width: 68%;
+        width: 80%;
       }
       .tech {
         display: flex;
@@ -277,12 +277,11 @@ a {
 .work-page {
   width: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   margin: 50px auto 0;
   padding-bottom: 100px;
   @include respond(desktop) {
-    grid-template-columns: 1fr 1fr;
     width: 75%;
   }
 
@@ -354,10 +353,12 @@ a {
 
         .techs {
           display: flex;
-          justify-content: space-between;
-          width: 160px;
+          width: 100%;
           margin: 0 0 20px;
-          padding-left: 10px;
+          padding: 0 10px;
+          @include respond(tiny){
+           padding-left: 6px;
+          }
         }
         .technology {
           font-size: 10px;
@@ -365,6 +366,10 @@ a {
           background: #1c1d1c8a;
           padding: 4px 6px;
           border-radius: 15px;
+          margin-right: 10px;
+          @include respond(tiny){
+            font-size: 8px;
+          }
         }
       }
     }

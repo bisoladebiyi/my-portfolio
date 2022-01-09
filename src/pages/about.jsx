@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div>
                     <p>I'm Adebiyi Abisola, a 19 year old frontend developer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
-                    <p>When i'm not coding, i enjoy reading...and eating</p>
+                    <p>When i'm not coding, i enjoy reading, watching animes...and eating</p>
                     <p className="work-techs">Here are the few technologies i work with: </p>
                     <div className="technologies">
                         <div>
@@ -35,6 +35,10 @@ const About = () => {
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Typescript</p>
+                            </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Styled Components</p>
                             </div>
                         </div>
                         <div>
