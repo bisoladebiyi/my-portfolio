@@ -48,12 +48,12 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
-                                <p>Node.js</p>
+                                <p>React.js</p>
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
-                                <p>React.js</p>
-                            </div>
+                                <p>Next.js</p>
+                            </div>  
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Redux</p>
