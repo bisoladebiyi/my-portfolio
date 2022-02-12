@@ -3,13 +3,12 @@ import works from '../works'
 import Navbar from '../components/navbar'
 
 const MoreWorks = () => {
-    const newWorks = works.reverse()
     return (
         <div>
             <Navbar />
             <h1 className="work-page-title">MY WORKS</h1>
             <div className="work-page"  data-aos="fade-up">
-            {newWorks.map(({img, id, desc, tech, title, github, site })=> {
+            {works.map(({img, id, tech, title, github, site })=> {
                 return (
                    <a href={site} target="_blank" rel="noreferrer" > <div key={id} className="work-page-container">
                         <img src={img} alt="" />
