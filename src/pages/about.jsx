@@ -34,6 +34,10 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Typescript</p>
+                            </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Styled Components</p>
                             </div>
                         </div>
