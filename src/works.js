@@ -1,5 +1,4 @@
 import grocery from './images/grocery.png'
-import trafalgar from './images/trafalgar.png'
 import weather from './images/weather.png'
 import code from './images/code.png'
 import blue from './images/blue.png'
@@ -8,18 +7,27 @@ import converter from './images/converter.png'
 import todo from './images/todo.png'
 import slack from './images/slack.png'
 import share from './images/share.png'
+import moyolagos from './images/moyolagos.png'
 
 
 
 
 const works = [
     {
+        id:12,
+        img:moyolagos,
+        title: "Moyolagos Portfolio",
+        github:"https://github.com/bisoladebiyi/moyolagos",
+        site:"https://moyolagos.netlify.app",
+        tech:["React", "Typescript", "Material UI"]
+    },
+    {
         id:11,
         img: share,
         title: "Share Social App",
         github: "https://github.com/bisoladebiyi/share",
         site: "https://share-one.vercel.app/",
-        tech:["Next.js", "Firebase"]
+        tech:["Next.js", "Firebase", "Material UI"]
     },
     {
         id:10,
@@ -27,7 +35,7 @@ const works = [
         title: "Slack Clone",
         github: "https://github.com/bisoladebiyi/slack-clone",
         site: "https://slack-clone-277f2.web.app/",
-        tech:["React", "Redux", "Firebase", "Styled Components"]
+        tech:["React", "Redux", "Firebase", "Styled Components", "Material UI"]
     },
     {
         id: 9,
@@ -48,7 +56,7 @@ const works = [
         title: "Code Editor",
         github: "https://github.com/bisoladebiyi/code-editor",
         site: "https://codeditor-react.netlify.app/",
-        tech: ["React", "Tailwind"]
+        tech: ["React", "TailwindCSS"]
 
     },
     {
@@ -70,7 +78,7 @@ const works = [
         title: "Blue Shop",
         github: "https://github.com/bisoladebiyi/Blue-shop-website",
         site: "https://blue-shop.netlify.app/",
-        tech: ["React", "Redux", "Tailwind"]
+        tech: ["React", "Redux", "TailwindCSS"]
 
     },
     {
@@ -91,7 +99,7 @@ const works = [
         title: "Currency Converter",
         github: "https://github.com/bisoladebiyi/react-currency-converter",
         site: "https://bee-currency-converter-react.netlify.app/",
-        tech: ["React"]
+        tech: ["React", "TailwindCSS"]
     },
     {
         id: 3,
@@ -102,16 +110,6 @@ const works = [
         site: "https://grocery-bud-bee.vercel.app/",
         tech: ["React"]
 
-    },
-    {
-        id: 2,
-        img: trafalgar,
-        desc: "A simple landing page, fully responsive. Built with HTML, SASS & Javascript.",
-        addclass: "work",
-        title: "Trafalgar Landing Page",
-        github: "https://github.com/bisoladebiyi/Trafalgar-landing-page",
-        site: "https://trafalgar-bee.netlify.app/",
-        tech: ["HTML", "CSS", "Javascript"]
     }
 ]
 export default works

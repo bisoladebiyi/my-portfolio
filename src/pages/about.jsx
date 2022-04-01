@@ -38,10 +38,14 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
-                                <p>Styled Components</p>
+                                <p>Git / GitHub</p>
                             </div>
                         </div>
                         <div>
+                        <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Styled Components</p>
+                            </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Tailwind</p>
