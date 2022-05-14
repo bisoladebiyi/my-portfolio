@@ -18,7 +18,7 @@ const works = [
         img:moyolagos,
         title: "Moyolagos Portfolio",
         github:"https://github.com/bisoladebiyi/moyolagos",
-        site:"https://moyolagos.netlify.app",
+        site:"https://moyolagos.com",
         tech:["React", "Typescript", "Material UI"]
     },
     {
