@@ -15,9 +15,9 @@ const About = () => {
                 <div className="vertical-line">
                 </div>
                 <div>
-                    <p>I'm Adebiyi Abisola, a 19 year old frontend developer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
+                    <p>I'm Adebiyi Abisola, a frontend developer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
                     <p>When i'm not coding, i enjoy reading, watching animes...and eating</p>
-                    <p className="work-techs">Here are the few technologies i work with: </p>
+                    <p className="work-techs">Here are the technologies and tools I work with: </p>
                     <div className="technologies">
                         <div>
                             <div className="tech">
@@ -40,8 +40,20 @@ const About = () => {
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Git / GitHub</p>
                             </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>BitBucket</p>
+                            </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Firebase</p>
+                            </div>
                         </div>
                         <div>
+                        <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Jira</p>
+                            </div>
                         <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Styled Components</p>
@@ -62,7 +74,10 @@ const About = () => {
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Redux</p>
                             </div>
-                            
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Vue.js</p>
+                            </div>
                         </div>
                         
                     </div>
@@ -70,6 +85,7 @@ const About = () => {
                 </div>
 
             </div>
+            <a href='https://drive.google.com/file/d/1P0GUPQnOrWqh5Y-KT0ORML01ZQnJImYE/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
 
            </div>
 

@@ -283,6 +283,20 @@ a {
 .about h1 {
   margin-bottom: 30px;
 }
+.about .resume {
+  all: unset;
+  color: #fff;
+  padding: 3px 15px;
+  border: 1px solid #daa8a8;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.about .resume:hover {
+  background: #daa8a8;
+}
 .about-container {
   display: flex;
   width: 70%;

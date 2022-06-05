@@ -6,6 +6,7 @@ const Navbar = () => {
       <div className="nav">
         <Link to="/" className="logo">abisola.</Link>
       </div>
+      
     </div>
   );
 };

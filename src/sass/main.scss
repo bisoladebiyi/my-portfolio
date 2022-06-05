@@ -229,6 +229,20 @@ a {
   h1 {
     margin-bottom: 30px;
   }
+  .resume{
+    all: unset;
+    color: #fff;
+    padding: 3px 15px;
+    border: 1px solid rgb(218, 168, 168);
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover{
+      background: rgb(218, 168, 168);
+    }
+  }
   &-container {
     display: flex;
     width: 70%;
