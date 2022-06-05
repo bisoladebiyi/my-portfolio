@@ -1,4 +1,3 @@
-import grocery from './images/grocery.png'
 import weather from './images/weather.png'
 import code from './images/code.png'
 import blue from './images/blue.png'
@@ -8,11 +7,20 @@ import todo from './images/todo.png'
 import slack from './images/slack.png'
 import share from './images/share.png'
 import moyolagos from './images/moyolagos.png'
+import sneaks from './images/sneaks.png'
 
 
 
 
 const works = [
+    {
+        id:13,
+        img:sneaks,
+        title: "Sneaks E-commerce site",
+        github:"https://github.com/bisoladebiyi/sneaks",
+        site:"https://sneaks-from-bee.netlify.app/",
+        tech:["React", "Redux toolkit", "Material UI", 'Paystack']
+    },
     {
         id:12,
         img:moyolagos,
@@ -101,15 +109,6 @@ const works = [
         site: "https://bee-currency-converter-react.netlify.app/",
         tech: ["React", "TailwindCSS"]
     },
-    {
-        id: 3,
-        img: grocery,
-        addclass: "work",
-        title: "Grocery Bud",
-        github: "https://github.com/bisoladebiyi/react-mini-projects/tree/main/grocery-bud",
-        site: "https://grocery-bud-bee.vercel.app/",
-        tech: ["React"]
-
-    }
+  
 ]
 export default works

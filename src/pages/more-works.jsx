@@ -22,7 +22,7 @@ const MoreWorks = () => {
                             <div className="techs">
                             {tech.map((tech)=> {
                                 return (
-                                    <div className="technology">{tech}</div>
+                                    <div className="technology"> <p>{tech}</p></div>
                                 )
                             })}
                             </div>
