@@ -85,7 +85,7 @@ const About = () => {
                 </div>
 
             </div>
-            <a href='https://drive.google.com/file/d/1P0GUPQnOrWqh5Y-KT0ORML01ZQnJImYE/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
+            <a href='https://drive.google.com/file/d/1QGGIBlG3kqXVpZdUpuNW4ID5rd5485-r/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
 
            </div>
 
