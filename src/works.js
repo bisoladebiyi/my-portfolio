@@ -8,11 +8,19 @@ import slack from './images/slack.png'
 import share from './images/share.png'
 import moyolagos from './images/moyolagos.png'
 import sneaks from './images/sneaks.png'
-
+import netflix from './images/netflix.png'
 
 
 
 const works = [
+    {
+        id:14,
+        img:netflix,
+        title: "Netflix Clone",
+        github:"https://github.com/bisoladebiyi/netflix-clone",
+        site:"https://bee-next-netflix-clone.netlify.app/",
+        tech:["Next.js", "Redux toolkit", "Typescript", 'Styled Components']
+    },
     {
         id:13,
         img:sneaks,
