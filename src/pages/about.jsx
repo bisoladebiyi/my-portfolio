@@ -15,7 +15,7 @@ const About = () => {
                 <div className="vertical-line">
                 </div>
                 <div>
-                    <p>I'm Adebiyi Abisola, a frontend developer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
+                    <p>I'm Adebiyi Abisola, a frontend engineer. I'm a student at Obafemi Awolowo University (OAU) studying Computer Science and Mathematics.</p>
                     <p>When i'm not coding, i enjoy reading, watching animes...and eating</p>
                     <p className="work-techs">Here are the technologies and tools I work with: </p>
                     <div className="technologies">
@@ -46,6 +46,14 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Jest</p>
+                            </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>React testing library</p>
+                            </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Firebase</p>
                             </div>
                         </div>
@@ -60,7 +68,7 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
-                                <p>Tailwind</p>
+                                <p>TailwindCSS</p>
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
@@ -76,6 +84,10 @@ const About = () => {
                             </div>
                             <div className="tech">
                                 <img className="arrow" src={arrow} alt="icon"  />
+                                <p>MobX</p>
+                            </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Vue.js</p>
                             </div>
                         </div>
@@ -85,7 +97,7 @@ const About = () => {
                 </div>
 
             </div>
-            <a href='https://drive.google.com/file/d/1QGGIBlG3kqXVpZdUpuNW4ID5rd5485-r/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
+            <a href='https://drive.google.com/file/d/1Ia05_YPCCa_pdgBnKjShnN0DVrphcyxI/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
 
            </div>
 

@@ -28,17 +28,12 @@ h1 {
 }
 @media (max-width: 1030px) {
   h1 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 800px) {
-  h1 {
     font-size: 26px;
   }
 }
 @media (max-width: 400px) {
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -273,6 +268,7 @@ a {
   color: #e9e9eb;
   height: 100%;
   width: 80%;
+  font-size: 14px;
   padding-top: 20px;
 }
 @media (max-width: 600px) {
@@ -299,19 +295,13 @@ a {
 }
 .about-container {
   display: flex;
-  width: 70%;
-}
-@media (max-width: 1030px) {
-  .about-container {
-    width: 75%;
-    font-size: 14px;
-  }
+  width: 75%;
 }
 @media (max-width: 600px) {
   .about-container {
     width: 100%;
     font-size: 13px;
-    line-height: 25px;
+    line-height: 24px;
   }
 }
 @media (max-width: 400px) {
@@ -333,12 +323,12 @@ a {
   justify-content: space-between;
   display: flex;
 }
-@media (max-width: 600px) {
+@media (max-width: 1030px) {
   .about-container .technologies {
-    width: 60%;
+    width: 75%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .about-container .technologies {
     width: 80%;
   }

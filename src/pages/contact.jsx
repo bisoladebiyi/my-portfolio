@@ -9,8 +9,8 @@ const Contact = () => {
         <div className="contact-container" id="contact">
           <h1>Get In Touch!</h1>
           <p className="text">
-            Are you in need of a web developer? I'm open to freelance/contract
-            jobs, and junior developer roles as well. Lets get in touch!
+            Are you in need of a Frontend engineer? I'm open to freelance/contract
+            jobs, and full-time roles as well. Lets get in touch!
           </p>
           <div className="btn">
             <a href="mailto:abisola.ca@gmail.com">Send an email</a>

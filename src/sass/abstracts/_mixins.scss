@@ -26,12 +26,9 @@
 @mixin fontSize {
     font-size: 32px;
     @include respond(desktop){
-        font-size: 28px;
-    }
-    @include respond(tab-land){
         font-size: 26px;
     }
     @include respond(mobile){
-        font-size: 24px;
+        font-size: 22px;
     }
 }

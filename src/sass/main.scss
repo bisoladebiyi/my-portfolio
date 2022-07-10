@@ -222,6 +222,7 @@ a {
   color: #e9e9eb;
   height: 100%;
   width: 80%;
+  font-size: 14px;
   @include respond(tab-port) {
     width: 88%;
   }
@@ -245,15 +246,11 @@ a {
   }
   &-container {
     display: flex;
-    width: 70%;
-    @include respond(desktop) {
-      width: 75%;
-      font-size: 14px;
-    }
+    width: 75%;
     @include respond(tab-port) {
       width: 100%;
       font-size: 13px;
-      line-height: 25px;
+      line-height: 24px;
     }
     @include respond(mobile) {
       font-size: 12px;
@@ -271,10 +268,10 @@ a {
       width: 50%;
       justify-content: space-between;
       display: flex;
-      @include respond(tab-port) {
-        width: 60%;
+      @include respond(desktop) {
+        width: 75%;
       }
-      @include respond(mobile) {
+      @include respond(tab-port) {
         width: 80%;
       }
       .tech {
