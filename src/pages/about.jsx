@@ -56,6 +56,10 @@ const About = () => {
                                 <img className="arrow" src={arrow} alt="icon"  />
                                 <p>Firebase</p>
                             </div>
+                            <div className="tech">
+                                <img className="arrow" src={arrow} alt="icon"  />
+                                <p>Magento</p>
+                            </div>
                         </div>
                         <div>
                         <div className="tech">
@@ -97,7 +101,7 @@ const About = () => {
                 </div>
 
             </div>
-            <a href='https://drive.google.com/file/d/1Ia05_YPCCa_pdgBnKjShnN0DVrphcyxI/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
+            <a href='https://drive.google.com/file/d/1-QzoValyYLl5nu0PZ40mfeYwazMkVFoD/view?usp=sharing' target={"_blank"} rel="noreferrer"><button className='resume'>View Resume</button></a>
 
            </div>
 
