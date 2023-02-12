@@ -3,7 +3,6 @@ import code from './images/code.png'
 import blue from './images/blue.png'
 import fusely from './images/fusely.png'
 import converter from './images/converter.png'
-import todo from './images/todo.png'
 import slack from './images/slack.png'
 import share from './images/share.png'
 import moyolagos from './images/moyolagos.png'
@@ -54,17 +53,6 @@ const works = [
         tech:["React", "Redux", "Firebase", "Styled Components", "Material UI"]
     },
     {
-        id: 9,
-        img: todo,
-        desc: "A list-making web application",
-        addclass: "work",
-        title: "Todo WebApp",
-        github: "https://github.com/bisoladebiyi/simple-todo-list",
-        site: "https://todolist-webapp-react.herokuapp.com/",
-        tech: ["React"]
-
-    },
-    {
         id: 8,
         img: code,
         desc: "A code editor for testing and showcasing HTML, CSS and JavaScript code. Built with react and tailwind",
@@ -82,7 +70,7 @@ const works = [
         addclass: "work ",
         title: "Weather App",
         github: "https://github.com/bisoladebiyi/weather-app",
-        site: "https://bee-weather-app.herokuapp.com/",
+        site: "https://bee-weather-app-react.netlify.app/",
         tech: ["React"]
 
     },
@@ -109,7 +97,7 @@ const works = [
 
     },
     {
-        id:4,
+        id: 4,
         img: converter,
         addclass: "work",
         title: "Currency Converter",
