@@ -4,9 +4,10 @@ const Navbar = () => {
   return (
     <div className="navbar" data-aos="fade-down">
       <div className="nav">
-        <Link to="/" className="logo">abisola.</Link>
+        <Link to="/" className="logo">
+          abisola.
+        </Link>
       </div>
-      
     </div>
   );
 };
