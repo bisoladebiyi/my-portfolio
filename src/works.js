@@ -8,10 +8,19 @@ import share from './images/share.png'
 import moyolagos from './images/moyolagos.png'
 import sneaks from './images/sneaks.png'
 import netflix from './images/netflix.png'
+import solid from './images/solid-ecommerce.png'
 
 
 
 const works = [
+    {
+        id:15,
+        img:solid,
+        title: "Solid E-commerce site",
+        github:"https://github.com/bisoladebiyi/solid-ecommerce",
+        site:"https://solid-ecommerce-site.netlify.app/",
+        tech:["Solid.js", "Typescript", "TailwindCSS"]
+    },
     {
         id:14,
         img:netflix,
