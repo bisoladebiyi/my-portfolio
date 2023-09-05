@@ -13,13 +13,13 @@ const About = () => {
             <div className="vertical-line"></div>
             <div>
               <p>
-                I'm Adebiyi Abisola, a frontend engineer. I'm a student at
-                Obafemi Awolowo University (OAU) studying Computer Science and
-                Mathematics.
+                I'm Adebiyi Abisola, a Software Engineer with two years of
+                hands-on professional experience in creating dynamic responsive
+                pixel-perfect web apps/websites.
               </p>
               <p>
                 When i'm not coding, i enjoy reading, watching animes...and
-                eating
+                eating :)
               </p>
               <p className="work-techs">
                 Here are the technologies and tools I work with:{" "}
@@ -100,12 +100,20 @@ const About = () => {
                     <img className="arrow" src={arrow} alt="icon" />
                     <p>Vue.js</p>
                   </div>
+                  <div className="tech">
+                    <img className="arrow" src={arrow} alt="icon" />
+                    <p>React Native</p>
+                  </div>
+                  <div className="tech">
+                    <img className="arrow" src={arrow} alt="icon" />
+                    <p>Solid.js</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1sk1GRSi_aCEL-YfMpIWekhitfwZ-kbHh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1JYVz9sB0U8W1t5Mnb9vYnyWz6OylEwOg/view?usp=sharing"
             target={"_blank"}
             rel="noreferrer"
           >
