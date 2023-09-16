@@ -1,11 +1,10 @@
 import weather from './images/weather.png'
 import code from './images/code.png'
 import blue from './images/blue.png'
-import fusely from './images/fusely.png'
 import converter from './images/converter.png'
 import slack from './images/slack.png'
 import share from './images/share.png'
-import moyolagos from './images/moyolagos.png'
+import employee_sector from './images/employee_sector.png'
 import sneaks from './images/sneaks.png'
 import netflix from './images/netflix.png'
 import solid from './images/solid-ecommerce.png'
@@ -13,14 +12,6 @@ import solid from './images/solid-ecommerce.png'
 
 
 const works = [
-    {
-        id:15,
-        img:solid,
-        title: "Solid E-commerce site",
-        github:"https://github.com/bisoladebiyi/solid-ecommerce",
-        site:"https://solid-ecommerce-site.netlify.app/",
-        tech:["Solid.js", "Typescript", "TailwindCSS"]
-    },
     {
         id:14,
         img:netflix,
@@ -39,14 +30,22 @@ const works = [
     },
     {
         id:12,
-        img:moyolagos,
-        title: "Moyolagos Portfolio",
-        github:"https://github.com/bisoladebiyi/moyolagos",
-        site:"https://moyolagos.com",
-        tech:["React", "Typescript", "Material UI"]
+        img: slack,
+        title: "Slack Clone",
+        github: "https://github.com/bisoladebiyi/slack-clone",
+        site: "https://slack-clone-277f2.web.app/",
+        tech:["React", "Redux", "Firebase", "Styled Components", "Material UI"]
     },
     {
         id:11,
+        img: employee_sector,
+        title: "Employee - Sector",
+        github:"https://github.com/bisoladebiyi/employee-sector-frontend",
+        site:"https://employee-sector-frontend.vercel.app/",
+        tech:["React", "Node.js", "MySQL", "TailwindCSS", "Fullstack"]
+    },
+    {
+        id:10,
         img: share,
         title: "Share Social App",
         github: "https://github.com/bisoladebiyi/share",
@@ -54,13 +53,14 @@ const works = [
         tech:["Next.js", "Firebase", "Material UI"]
     },
     {
-        id:10,
-        img: slack,
-        title: "Slack Clone",
-        github: "https://github.com/bisoladebiyi/slack-clone",
-        site: "https://slack-clone-277f2.web.app/",
-        tech:["React", "Redux", "Firebase", "Styled Components", "Material UI"]
+        id:9,
+        img:solid,
+        title: "Solid E-commerce site",
+        github:"https://github.com/bisoladebiyi/solid-ecommerce",
+        site:"https://solid-ecommerce-site.netlify.app/",
+        tech:["Solid.js", "Typescript", "TailwindCSS"]
     },
+
     {
         id: 8,
         img: code,
@@ -92,17 +92,6 @@ const works = [
         github: "https://github.com/bisoladebiyi/Blue-shop-website",
         site: "https://blue-shop.netlify.app/",
         tech: ["React", "Redux", "TailwindCSS"]
-
-    },
-    {
-        id: 5,
-        img: fusely,
-        desc: "A simple landing page, fully responsive. Built with HTML, SASS & Javascript.",
-        addclass: "work",
-        title: "Fusely Landing Page",
-        github: "https://github.com/bisoladebiyi/fusely",
-        site: "https://fusely-landing-page.netlify.app/",
-        tech: ["HTML", "SASS", "Javascript"]
 
     },
     {
