@@ -24,7 +24,7 @@ const works = [
     img: netflix,
     title: "Netflix Clone",
     github: "https://github.com/bisoladebiyi/netflix-clone",
-    site: "https://bee-next-netflix-clone.netlify.app/",
+    site: "https://bee-netflix-clone.vercel.app/",
     tech: ["Next.js", "Redux toolkit", "Typescript", "Styled Components"],
   },
   {

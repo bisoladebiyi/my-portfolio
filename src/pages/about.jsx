@@ -13,7 +13,7 @@ const About = () => {
             <div className="vertical-line"></div>
             <div>
               <p>
-                I'm Adebiyi Abisola, a Software Engineer with 2+ years of
+                I'm Adebiyi Abisola, a Software Engineer with 3+ years of
                 hands-on professional experience in creating dynamic responsive
                 pixel-perfect web apps/websites.
               </p>
@@ -22,7 +22,7 @@ const About = () => {
                 eating :)
               </p>
               <p className="work-techs">
-                Here are the technologies and tools I work with:{" "}
+                Here are some technologies and tools I work with:{" "}
               </p>
               <div className="technologies">
                 <div>
@@ -48,30 +48,26 @@ const About = () => {
                   </div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
-                    <p>BitBucket</p>
+                    <p>Python</p>
                   </div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
-                    <p>Jest</p>
-                  </div>
-                  <div className="tech">
-                    <img className="arrow" src={arrow} alt="icon" />
-                    <p>React testing library</p>
-                  </div>
-                  <div className="tech">
-                    <img className="arrow" src={arrow} alt="icon" />
-                    <p>Firebase</p>
+                    <p>Java</p>
                   </div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
                     <p>Magento</p>
                   </div>
-                </div>
-                <div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
                     <p>Node.js</p>
                   </div>
+                  <div className="tech">
+                    <img className="arrow" src={arrow} alt="icon" />
+                    <p>Ruby</p>
+                  </div>
+                </div>
+                <div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
                     <p>Styled Components</p>
@@ -113,7 +109,7 @@ const About = () => {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1Ayz4tCvq60vznd6vsb51DxHCTcAuP2oj/view?usp=sharing"
+            href="https://drive.google.com/file/d/10EYnhmQQ80fNxjYKfNGiG6FB8yRD0VPf/view?usp=sharing"
             target={"_blank"}
             rel="noreferrer"
           >

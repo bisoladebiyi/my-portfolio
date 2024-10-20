@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="contact-container" id="contact">
           <h1>Get In Touch!</h1>
           <p className="text">
-            Are you in need of a Frontend engineer? I'm open to
+            Are you in need of a software engineer? I'm open to
             freelance/contract jobs, and full-time roles as well. Lets get in
             touch!
           </p>
