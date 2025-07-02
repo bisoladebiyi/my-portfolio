@@ -1,8 +1,8 @@
 import weather from "./images/weather.png";
 import code from "./images/code.png";
 import blue from "./images/blue.png";
-import converter from "./images/converter.png";
 import slack from "./images/slack.png";
+import trackr from "./images/trackr.png";
 import share from "./images/share.png";
 import employee_sector from "./images/employee_sector.png";
 import sneaks from "./images/sneaks.png";
@@ -11,6 +11,14 @@ import solid from "./images/solid-ecommerce.png";
 import trello_dupe from "./images/trello_dupe.png";
 
 const works = [
+    {
+    id: 16,
+    img: trackr,
+    title: "trackr",
+    github: "https://github.com/bisoladebiyi/trackr-fe",
+    site: "https://trackr-fe.vercel.app/",
+    tech: ["Next.js", "FastAPI", "Python", "TailwindCSS"],
+  },
   {
     id: 15,
     img: trello_dupe,
@@ -42,14 +50,6 @@ const works = [
     github: "https://github.com/bisoladebiyi/slack-clone",
     site: "https://slack-clone-277f2.web.app/",
     tech: ["React", "Redux", "Firebase", "Styled Components", "Material UI"],
-  },
-  {
-    id: 11,
-    img: employee_sector,
-    title: "Employee - Sector",
-    github: "https://github.com/bisoladebiyi/employee-sector-frontend",
-    site: "https://employee-sector-frontend.vercel.app/",
-    tech: ["React", "Node.js", "MySQL", "TailwindCSS", "Fullstack"],
   },
   {
     id: 10,
@@ -97,15 +97,6 @@ const works = [
     github: "https://github.com/bisoladebiyi/Blue-shop-website",
     site: "https://blue-shop.netlify.app/",
     tech: ["React", "Redux", "TailwindCSS"],
-  },
-  {
-    id: 4,
-    img: converter,
-    addclass: "work",
-    title: "Currency Converter",
-    github: "https://github.com/bisoladebiyi/react-currency-converter",
-    site: "https://bee-currency-converter-react.netlify.app/",
-    tech: ["React", "TailwindCSS"],
   },
 ];
 export default works;

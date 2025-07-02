@@ -13,7 +13,7 @@ const About = () => {
             <div className="vertical-line"></div>
             <div>
               <p>
-                I'm Adebiyi Abisola, a Software Engineer with 3+ years of
+                I'm Adebiyi Abisola, a Software Engineer with 5 years of
                 hands-on professional experience in creating dynamic responsive
                 pixel-perfect web apps/websites.
               </p>
@@ -44,7 +44,7 @@ const About = () => {
                   </div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
-                    <p>Git / GitHub</p>
+                    <p>.NET</p>
                   </div>
                   <div className="tech">
                     <img className="arrow" src={arrow} alt="icon" />
@@ -100,16 +100,12 @@ const About = () => {
                     <img className="arrow" src={arrow} alt="icon" />
                     <p>React Native</p>
                   </div>
-                  <div className="tech">
-                    <img className="arrow" src={arrow} alt="icon" />
-                    <p>Solid.js</p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1hu_34SWeqHcbwDvgWAPrAzncqRP0HeX5/view?usp=sharing"
+            href="https://drive.google.com/file/d/1FkyOJlaJa5bBljdKefOgC_znDrFmcqhO/view?usp=sharing"
             target={"_blank"}
             rel="noreferrer"
           >
