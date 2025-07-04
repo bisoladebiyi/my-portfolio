@@ -4,7 +4,6 @@ import blue from "./images/blue.png";
 import slack from "./images/slack.png";
 import trackr from "./images/trackr.png";
 import share from "./images/share.png";
-import employee_sector from "./images/employee_sector.png";
 import sneaks from "./images/sneaks.png";
 import netflix from "./images/netflix.png";
 import solid from "./images/solid-ecommerce.png";
