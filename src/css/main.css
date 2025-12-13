@@ -246,6 +246,9 @@ h1 {
   width: 20px;
   color: #b2b1b9;
   transition: color ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon:hover {
@@ -319,7 +322,7 @@ a {
   margin: 20px 0 10px;
 }
 .about-container .technologies {
-  width: 50%;
+  width: 60%;
   justify-content: space-between;
   display: flex;
 }

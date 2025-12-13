@@ -1,8 +1,7 @@
-import weather from "./images/weather.png";
 import code from "./images/code.png";
-import blue from "./images/blue.png";
 import slack from "./images/slack.png";
 import trackr from "./images/trackr.png";
+import instructive from "./images/instructive.png";
 import share from "./images/share.png";
 import sneaks from "./images/sneaks.png";
 import netflix from "./images/netflix.png";
@@ -10,6 +9,14 @@ import solid from "./images/solid-ecommerce.png";
 import trello_dupe from "./images/trello_dupe.png";
 
 const works = [
+    {
+    id: 17,
+    img:  instructive,
+    title: "instructive",
+    github: "https://github.com/bisoladebiyi/instructive-lms-client",
+    site: "https://instructive-lms.netlify.app/",
+    tech: ["React", "Typescript", "Rails", "TailwindCSS", "MUI"],
+  },
     {
     id: 16,
     img: trackr,
@@ -76,26 +83,6 @@ const works = [
     github: "https://github.com/bisoladebiyi/code-editor",
     site: "https://codeditor-react.netlify.app/",
     tech: ["React", "TailwindCSS"],
-  },
-  {
-    id: 7,
-    img: weather,
-    desc: "A weather app, gives basic info about the weather of all cities across the globe",
-    addclass: "work ",
-    title: "Weather App",
-    github: "https://github.com/bisoladebiyi/weather-app",
-    site: "https://bee-weather-app-react.netlify.app/",
-    tech: ["React"],
-  },
-  {
-    id: 6,
-    img: blue,
-    desc: "E-commerce site built with react, redux and tailwind",
-    addclass: "work switch",
-    title: "Blue Shop",
-    github: "https://github.com/bisoladebiyi/Blue-shop-website",
-    site: "https://blue-shop.netlify.app/",
-    tech: ["React", "Redux", "TailwindCSS"],
-  },
+  }
 ];
 export default works;
