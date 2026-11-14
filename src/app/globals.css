@@ -81,6 +81,12 @@
   --color-peach-ink: var(--peach-ink);
   --color-on-accent: var(--on-accent);
 
+  --font-display:
+    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
   --radius-control: 10px;
   --radius-card: 12px;
   --radius-panel: 16px;
@@ -96,6 +102,12 @@
   body {
     background: var(--bg);
     color: var(--fg);
-    font-family: system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    text-wrap: balance;
   }
 }
