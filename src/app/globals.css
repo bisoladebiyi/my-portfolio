@@ -1,14 +1,5 @@
 @import "tailwindcss";
 
-/*
- * Design tokens. Dark is always the default, whatever the OS prefers; light
- * applies only when the visitor picks it (data-theme="light").
- *
- * Accent roles:
- *   --sage / --lavender / --peach   fills, borders, large text (≥ 3:1)
- *   --*-ink                         small text and solid button fills (≥ 4.5:1)
- *   --on-accent                     text on an *-ink fill
- */
 :root {
   --bg: #171b1d;
   --panel: #24292c;
@@ -43,10 +34,6 @@
   color-scheme: light;
 }
 
-/*
- * Theme tokens sit alongside Tailwind's built-in palette. Tokens switch with
- * the theme; built-in colors (red-500, etc.) look the same in dark and light.
- */
 @theme inline {
   --color-bg: var(--bg);
   --color-panel: var(--panel);
@@ -67,7 +54,6 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono:
     var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo, monospace;
-  /* VS Code's workbench font: the OS's own UI face (SF Pro, Segoe UI, Ubuntu). */
   --font-ui:
     -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui,
     "Ubuntu", "Droid Sans", sans-serif;

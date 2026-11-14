@@ -1,9 +1,7 @@
 export type FileKind = "tsx" | "md" | "pdf";
 
 export type ExplorerEntry = {
-  /** Filename shown in the explorer and tab strip. */
   file: string;
-  /** Plain-language page name for screen readers and recruiters. */
   label: string;
   href: string;
   kind: FileKind;
@@ -34,7 +32,6 @@ export const rootFiles: ExplorerEntry[] = [
 
 const internal = [...pages, ...rootFiles].filter((e) => !e.external);
 
-/** The explorer entry for a route, if it has one. */
 export function entryForPath(pathname: string): ExplorerEntry | undefined {
   return internal.find((e) => e.href === pathname);
 }
