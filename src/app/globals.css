@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /*
- * Design tokens. Dark is the default; light applies when the visitor picks it
- * (data-theme="light") or, with no explicit choice, when the OS prefers light.
+ * Design tokens. Dark is always the default, whatever the OS prefers; light
+ * applies only when the visitor picks it (data-theme="light").
  *
  * Accent roles:
  *   --sage / --lavender / --peach   fills, borders, large text (≥ 3:1)
@@ -26,25 +26,6 @@
   color-scheme: dark;
 }
 
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --bg: #f5f4f0;
-    --panel: #ffffff;
-    --raised: #f0efea;
-    --line: #dedcd3;
-    --fg: #252b2d;
-    --muted: #5c6561;
-    --sage: #719263;
-    --lavender: #8b73b2;
-    --peach: #b5693c;
-    --sage-ink: #556f49;
-    --lavender-ink: #6e5797;
-    --peach-ink: #94522b;
-    --on-accent: #ffffff;
-    color-scheme: light;
-  }
-}
-
 :root[data-theme="light"] {
   --bg: #f5f4f0;
   --panel: #ffffff;
@@ -62,11 +43,11 @@
   color-scheme: light;
 }
 
-/* Only token colors exist as utilities, so components can't reach for raw hex or the default palette. */
+/*
+ * Theme tokens sit alongside Tailwind's built-in palette. Tokens switch with
+ * the theme; built-in colors (red-500, etc.) look the same in dark and light.
+ */
 @theme inline {
-  --color-*: initial;
-  --color-transparent: transparent;
-  --color-current: currentColor;
   --color-bg: var(--bg);
   --color-panel: var(--panel);
   --color-raised: var(--raised);
@@ -86,6 +67,10 @@
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono:
     var(--font-jetbrains-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  /* VS Code's workbench font: the OS's own UI face (SF Pro, Segoe UI, Ubuntu). */
+  --font-ui:
+    -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui,
+    "Ubuntu", "Droid Sans", sans-serif;
 
   --radius-control: 10px;
   --radius-card: 12px;
@@ -97,6 +82,11 @@
   ::before,
   ::after {
     border-color: var(--line);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--lavender-ink);
+    outline-offset: 2px;
   }
 
   body {

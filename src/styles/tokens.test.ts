@@ -62,8 +62,8 @@ describe.each(Object.entries(themes))("%s theme", (_, t) => {
 });
 
 describe("theme parity", () => {
-  it("system-light media block matches the explicit light theme", () => {
-    expect(tokensIn(':root:not([data-theme="dark"])')).toEqual(themes.light);
+  it("stays dark unless light is chosen explicitly", () => {
+    expect(css).not.toMatch(/prefers-color-scheme/);
   });
 
   it("both themes define the same tokens", () => {
