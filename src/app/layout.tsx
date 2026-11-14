@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { WorkspaceShell } from "@/components/shell/WorkspaceShell";
 import { fontVariables } from "./fonts";
 import "./globals.css";
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={fontVariables}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <WorkspaceShell>{children}</WorkspaceShell>
+      </body>
     </html>
   );
 }
