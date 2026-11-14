@@ -1,18 +1,101 @@
 @import "tailwindcss";
 
-/* Placeholder colors until the design tokens land (PV2-3). */
+/*
+ * Design tokens. Dark is the default; light applies when the visitor picks it
+ * (data-theme="light") or, with no explicit choice, when the OS prefers light.
+ *
+ * Accent roles:
+ *   --sage / --lavender / --peach   fills, borders, large text (≥ 3:1)
+ *   --*-ink                         small text and solid button fills (≥ 4.5:1)
+ *   --on-accent                     text on an *-ink fill
+ */
 :root {
-  --background: #171b1d;
-  --foreground: #e9ece8;
+  --bg: #171b1d;
+  --panel: #24292c;
+  --raised: #2c3236;
+  --line: #353c40;
+  --fg: #e9ece8;
+  --muted: #a3aca7;
+  --sage: #b7d8a8;
+  --lavender: #c7b5e5;
+  --peach: #f0c2a2;
+  --sage-ink: #b7d8a8;
+  --lavender-ink: #c7b5e5;
+  --peach-ink: #f0c2a2;
+  --on-accent: #171b1d;
+  color-scheme: dark;
 }
 
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f5f4f0;
+    --panel: #ffffff;
+    --raised: #f0efea;
+    --line: #dedcd3;
+    --fg: #252b2d;
+    --muted: #5c6561;
+    --sage: #719263;
+    --lavender: #8b73b2;
+    --peach: #b5693c;
+    --sage-ink: #556f49;
+    --lavender-ink: #6e5797;
+    --peach-ink: #94522b;
+    --on-accent: #ffffff;
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #f5f4f0;
+  --panel: #ffffff;
+  --raised: #f0efea;
+  --line: #dedcd3;
+  --fg: #252b2d;
+  --muted: #5c6561;
+  --sage: #719263;
+  --lavender: #8b73b2;
+  --peach: #b5693c;
+  --sage-ink: #556f49;
+  --lavender-ink: #6e5797;
+  --peach-ink: #94522b;
+  --on-accent: #ffffff;
+  color-scheme: light;
+}
+
+/* Only token colors exist as utilities, so components can't reach for raw hex or the default palette. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-raised: var(--raised);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-sage: var(--sage);
+  --color-lavender: var(--lavender);
+  --color-peach: var(--peach);
+  --color-sage-ink: var(--sage-ink);
+  --color-lavender-ink: var(--lavender-ink);
+  --color-peach-ink: var(--peach-ink);
+  --color-on-accent: var(--on-accent);
+
+  --radius-control: 10px;
+  --radius-card: 12px;
+  --radius-panel: 16px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: system-ui, sans-serif;
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--line);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: system-ui, sans-serif;
+  }
 }
